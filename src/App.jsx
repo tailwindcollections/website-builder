@@ -19,7 +19,7 @@ import SettingsIcon from "./icons/settings.svg?component";
 function App() {
   return (
     <div className="flex bg-gray-100 font-sans text-gray-900">
-      <aside className="flex min-h-screen w-18 flex-col items-center border-r border-gray-200 bg-white">
+      <aside className="flex h-screen w-18 flex-col items-center border-r border-gray-200 bg-white">
         <div className="flex h-18 w-full items-center justify-center border-b border-gray-200">
           <LogoIcon />
         </div>
@@ -170,7 +170,7 @@ function App() {
             </button>
           </div>
         </div>
-        <details className="group" open>
+        <details className="group">
           <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
             <div className="flex items-center justify-between">
               <span className="font-semibold">Spacing</span>
@@ -179,7 +179,7 @@ function App() {
               </div>
             </div>
           </summary>
-          <div className="py-4 px-6">
+          <div className="border-b border-gray-200 py-4 px-6">
             <div className="relative flex items-center rounded-xl border-2 border-dashed border-gray-200 py-10 px-12">
               <span className="absolute top-2 left-2 text-[10px] uppercase text-gray-400">
                 margin
@@ -235,6 +235,132 @@ function App() {
               </div>
             </div>
           </div>
+        </details>
+        <details className="group">
+          <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">Size</span>
+              <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
+                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+              </div>
+            </div>
+          </summary>
+          <div className="border-b border-gray-200 py-4 px-6">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-y-0 flex items-center px-4">
+                    <span className="text-sm text-gray-400">W</span>
+                  </div>
+                  <input
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
+                    type="text"
+                    value="Auto"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-y-0 flex items-center px-4">
+                    <span className="text-sm text-gray-400">H</span>
+                  </div>
+                  <input
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
+                    type="text"
+                    value="Auto"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-y-0 flex items-center px-4">
+                    <span className="text-sm text-gray-400">Min W</span>
+                  </div>
+                  <input
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
+                    type="text"
+                    value="Auto"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-y-0 flex items-center px-4">
+                    <span className="text-sm text-gray-400">Max W</span>
+                  </div>
+                  <input
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
+                    type="text"
+                    value="Auto"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-y-0 flex items-center px-4">
+                    <span className="text-sm text-gray-400">Max H</span>
+                  </div>
+                  <input
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
+                    type="text"
+                    value="Auto"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-y-0 flex items-center px-4">
+                    <span className="text-sm text-gray-400">H</span>
+                  </div>
+                  <input
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
+                    type="text"
+                    value="Auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details className="group">
+          <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">Typography</span>
+              <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
+                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details className="group">
+          <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">Position</span>
+              <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
+                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details className="group">
+          <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">Border</span>
+              <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
+                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details className="group">
+          <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">Background</span>
+              <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
+                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+              </div>
+            </div>
+          </summary>
         </details>
       </aside>
     </div>
