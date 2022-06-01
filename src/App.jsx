@@ -26,7 +26,7 @@ function App() {
         <nav className="flex flex-1 flex-col gap-y-4 pt-10">
           <a
             href="#"
-            className="rounded-xl bg-gray-100 p-2 text-blue-500 hover:bg-gray-50"
+            className="rounded-xl bg-gray-100 p-2 text-blue-600 hover:bg-gray-50"
           >
             <SquarePlusIcon className="h-6 w-6 stroke-current" />
           </a>
@@ -96,7 +96,7 @@ function App() {
           <div className="h-full w-px bg-gray-200" />
 
           <div className="flex items-center gap-x-2">
-            <button className="rounded-xl bg-gray-100 p-2 text-blue-500">
+            <button className="rounded-xl bg-gray-100 p-2 text-blue-600">
               <DeviceDesktopIcon className="h-6 w-6 stroke-current" />
             </button>
             <button className="rounded-xl p-2 text-gray-400 hover:bg-gray-100">
@@ -131,10 +131,111 @@ function App() {
             <UsersIcon className="h-5 w-5 stroke-current text-gray-400" />
             <span className="text-sm font-semibold leading-6">Invite</span>
           </button>
-          <button className="flex flex-1 items-center justify-center gap-x-2 rounded-xl bg-blue-400 px-4 py-2 text-sm leading-6 text-white">
+          <button className="flex flex-1 items-center justify-center gap-x-2 rounded-xl bg-blue-600 px-4 py-2 text-sm leading-6 text-white">
             Publish
           </button>
         </div>
+        <div className="border-b border-gray-200 py-4 px-6">
+          <div className="flex items-center justify-between">
+            <span className="font-semibold"> Selector </span>
+            <span className="text-sm text-gray-400">
+              Inheriting{" "}
+              <span className="text-sm font-medium text-gray-900">
+                2 Selectors
+              </span>
+            </span>
+          </div>
+        </div>
+        <div className="border-b border-gray-200 py-4 px-6">
+          <button className="flex w-full items-center justify-between rounded-xl border border-gray-200 bg-gray-50 px-3 py-1.5">
+            <div className="flex items-center gap-x-2">
+              <span className="rounded-lg bg-white p-1 shadow-md">
+                <DeviceDesktopIcon className="h-5 w-5 stroke-current text-blue-600" />
+              </span>
+              <span className="rounded-lg bg-blue-100 py-1 px-3 text-sm font-semibold text-blue-600 ">
+                H1 - hero_title
+              </span>
+            </div>
+            <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+          </button>
+          <div className="mt-2 text-xs text-gray-400">
+            1 on this page, 7 on other pages
+          </div>
+        </div>
+        <div className="border-b border-gray-200 py-4 px-6">
+          <div className="flex items-center justify-between">
+            <span className="font-semibold">Layout</span>
+            <button className="rounded-lg p-1">
+              <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+            </button>
+          </div>
+        </div>
+        <details className="group" open>
+          <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold">Spacing</span>
+              <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
+                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+              </div>
+            </div>
+          </summary>
+          <div className="py-4 px-6">
+            <div className="relative flex items-center rounded-xl border-2 border-dashed border-gray-200 py-10 px-12">
+              <span className="absolute top-2 left-2 text-[10px] uppercase text-gray-400">
+                margin
+              </span>
+              <div className="relative w-full">
+                <div className="absolute inset-x-0 top-0 flex -translate-y-1/2 flex-col items-center gap-2">
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={20}
+                  />
+                  <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={0}
+                  />
+                </div>
+                <div className="absolute inset-y-0 right-0 flex translate-x-1/2 items-center gap-2">
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={0}
+                  />
+                  <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={0}
+                  />
+                </div>
+                <div className="absolute inset-x-0 bottom-0 flex translate-y-1/2 flex-col items-center gap-2">
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={0}
+                  />
+                  <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={20}
+                  />
+                </div>
+                <div className="absolute inset-y-0 left-0 flex -translate-x-1/2 items-center gap-2">
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={0}
+                  />
+                  <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
+                  <input
+                    className="h-4 w-4 text-center text-sm outline-none"
+                    value={0}
+                  />
+                </div>
+                <div className="h-24 w-full rounded-xl border-2 border-blue-600 px-10 py-8">
+                  <div className="h-full w-full rounded-lg bg-gray-200"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
       </aside>
     </div>
   );

@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         sans: ["Gilroy", "sans-serif"],
       },
+      colors: {
+        blue: {
+          600: "#006FF9",
+        },
+      },
     },
   },
   plugins: [],
