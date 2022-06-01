@@ -79,9 +79,7 @@ function App() {
           <button className="flex flex-col items-start rounded-xl bg-gray-100 px-6 py-2">
             <div className="flex items-center gap-x-2">
               <span className="text-sm">Page: Homepage - Dipa</span>
-              <button>
-                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-              </button>
+              <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
             </div>
             <div className="text-xs text-gray-400">
               https://dipainhouse.com/
@@ -137,7 +135,7 @@ function App() {
         </div>
         <div className="border-b border-gray-200 py-4 px-6">
           <div className="flex items-center justify-between">
-            <span className="font-semibold"> Selector </span>
+            <span className="text-sm font-semibold"> Selector </span>
             <span className="text-sm text-gray-400">
               Inheriting{" "}
               <span className="text-sm font-medium text-gray-900">
@@ -162,18 +160,21 @@ function App() {
             1 on this page, 7 on other pages
           </div>
         </div>
-        <div className="border-b border-gray-200 py-4 px-6">
-          <div className="flex items-center justify-between">
-            <span className="font-semibold">Layout</span>
-            <button className="rounded-lg p-1">
-              <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-            </button>
-          </div>
-        </div>
         <details className="group">
           <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
             <div className="flex items-center justify-between">
-              <span className="font-semibold">Spacing</span>
+              <span className="text-sm font-semibold">Layout</span>
+              <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
+                <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+              </div>
+            </div>
+          </summary>
+        </details>
+
+        <details className="group">
+          <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-semibold">Spacing</span>
               <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
                 <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
               </div>
@@ -188,49 +189,49 @@ function App() {
                 <div className="absolute inset-x-0 top-0 flex -translate-y-1/2 flex-col items-center gap-2">
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={20}
+                    defaultValue={20}
                   />
                   <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={0}
+                    defaultValue={0}
                   />
                 </div>
                 <div className="absolute inset-y-0 right-0 flex translate-x-1/2 items-center gap-2">
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={0}
+                    defaultValue={0}
                   />
                   <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={0}
+                    defaultValue={0}
                   />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 flex translate-y-1/2 flex-col items-center gap-2">
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={0}
+                    defaultValue={0}
                   />
                   <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={20}
+                    defaultValue={20}
                   />
                 </div>
                 <div className="absolute inset-y-0 left-0 flex -translate-x-1/2 items-center gap-2">
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={0}
+                    defaultValue={0}
                   />
                   <div className="h-2 w-2 border-2 border-blue-600 bg-white" />
                   <input
                     className="h-4 w-4 text-center text-sm outline-none"
-                    value={0}
+                    defaultValue={0}
                   />
                 </div>
                 <div className="h-24 w-full rounded-xl border-2 border-blue-600 px-10 py-8">
-                  <div className="h-full w-full rounded-lg bg-gray-200"></div>
+                  <div className="h-full w-full rounded bg-gray-200"></div>
                 </div>
               </div>
             </div>
@@ -239,7 +240,7 @@ function App() {
         <details className="group">
           <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
             <div className="flex items-center justify-between">
-              <span className="font-semibold">Size</span>
+              <span className="text-sm font-semibold">Size</span>
               <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
                 <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
               </div>
@@ -255,7 +256,7 @@ function App() {
                   <input
                     className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
                     type="text"
-                    value="Auto"
+                    defaultValue="Auto"
                   />
                 </div>
               </div>
@@ -267,7 +268,7 @@ function App() {
                   <input
                     className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
                     type="text"
-                    value="Auto"
+                    defaultValue="Auto"
                   />
                 </div>
               </div>
@@ -279,7 +280,7 @@ function App() {
                   <input
                     className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
                     type="text"
-                    value="Auto"
+                    defaultValue="Auto"
                   />
                 </div>
               </div>
@@ -291,7 +292,19 @@ function App() {
                   <input
                     className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
                     type="text"
-                    value="Auto"
+                    defaultValue="Auto"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-y-0 flex items-center px-4">
+                    <span className="text-sm text-gray-400">Max W</span>
+                  </div>
+                  <input
+                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
+                    type="text"
+                    defaultValue="Auto"
                   />
                 </div>
               </div>
@@ -303,21 +316,23 @@ function App() {
                   <input
                     className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
                     type="text"
-                    value="Auto"
+                    defaultValue="Auto"
                   />
                 </div>
               </div>
-              <div>
-                <div className="relative">
+              <div className="col-span-2">
+                <button className="relative w-full rounded-xl border border-gray-200 bg-gray-50 py-2 pl-4 pr-10 text-right">
                   <div className="absolute inset-y-0 flex items-center px-4">
-                    <span className="text-sm text-gray-400">H</span>
+                    <span className="text-sm text-gray-400">Overflow</span>
                   </div>
-                  <input
-                    className="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-2 text-right text-sm font-semibold leading-6"
-                    type="text"
-                    value="Auto"
-                  />
-                </div>
+                  <span className="flex items-center justify-end gap-x-2 text-sm font-semibold leading-6">
+                    <EyeIcon className="h-5 w-5 stroke-current text-gray-400" />
+                    <span>Invisible</span>
+                  </span>
+                  <div className="absolute inset-y-0 right-0 flex items-center px-4">
+                    <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
+                  </div>
+                </button>
               </div>
             </div>
           </div>
@@ -325,7 +340,7 @@ function App() {
         <details className="group">
           <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
             <div className="flex items-center justify-between">
-              <span className="font-semibold">Typography</span>
+              <span className="text-sm font-semibold">Typography</span>
               <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
                 <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
               </div>
@@ -335,7 +350,7 @@ function App() {
         <details className="group">
           <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
             <div className="flex items-center justify-between">
-              <span className="font-semibold">Position</span>
+              <span className="text-sm font-semibold">Position</span>
               <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
                 <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
               </div>
@@ -345,7 +360,7 @@ function App() {
         <details className="group">
           <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
             <div className="flex items-center justify-between">
-              <span className="font-semibold">Border</span>
+              <span className="text-sm font-semibold">Border</span>
               <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
                 <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
               </div>
@@ -355,7 +370,7 @@ function App() {
         <details className="group">
           <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
             <div className="flex items-center justify-between">
-              <span className="font-semibold">Background</span>
+              <span className="text-sm font-semibold">Background</span>
               <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
                 <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
               </div>
