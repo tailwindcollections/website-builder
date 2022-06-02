@@ -22,6 +22,7 @@ import AlignRightIcon from "./icons/align-right.svg?component";
 import AlignTopIcon from "./icons/align-top.svg?component";
 import AlignMiddleIcon from "./icons/align-middle.svg?component";
 import BarsIcon from "./icons/bars.svg?component";
+import PencilIcon from "./icons/pencil.svg?component";
 import Tooltip from "./components/Tooltip";
 
 function App() {
@@ -166,16 +167,39 @@ function App() {
             </nav>
             <section className="py-16">
               <div className="px-12">
-                <h1 className="max-w-3xl text-5xl font-bold leading-[1.4]">
-                  We craft digital products for business and user goals.
-                </h1>
+                <div className="group relative">
+                  <div className="pointer-events-none absolute inset-0 hidden border-2 border-blue-600 group-focus-within:block">
+                    <div className="absolute -translate-y-full pl-2">
+                      <div className="flex items-center gap-x-2 rounded-t-lg bg-blue-600 px-3 py-1 text-white">
+                        <span className="text-sm">H1 - hero title</span>
+                        <PencilIcon className="h-4 w-4 fill-current" />
+                      </div>
+                    </div>
+                    <div className="absolute left-0 top-0 h-2 w-2 -translate-x-full -translate-y-full border-2 border-blue-600"></div>
+                    <div className="absolute right-0 top-0 h-2 w-2 translate-x-full -translate-y-full border-2 border-blue-600"></div>
+                    <div className="absolute right-0 bottom-0 h-2 w-2 translate-x-full translate-y-full border-2 border-blue-600"></div>
+                    <div className="absolute left-0 bottom-0 h-2 w-2 -translate-x-full translate-y-full border-2 border-blue-600"></div>
+                    <div className="absolute inset-x-0 top-0 flex -translate-y-1/2 items-center justify-center">
+                      <div className="h-2 w-2 border-2 border-blue-600 bg-white"></div>
+                    </div>
+                    <div className="absolute inset-x-0 bottom-0 flex translate-y-1/2 items-center justify-center">
+                      <div className="h-2 w-2 border-2 border-blue-600 bg-white"></div>
+                    </div>
+                  </div>
+                  <h1
+                    className="max-w-3xl text-5xl font-bold leading-[1.4] focus:outline-none"
+                    contentEditable
+                  >
+                    We craft digital products for business and user goals.
+                  </h1>
+                </div>
                 <p className="mt-4 text-lg leading-loose text-gray-400">
                   Help find solutions with UI / UX designs that are intuitive
                   and in accordance with client business goals. We provide a
                   high-quality service in UI/ UX Design & Development.
                 </p>
               </div>
-              <div className="flex items-center gap-8 px-12 pt-8">
+              <div className="flex items-center gap-4 px-12 pt-8">
                 <button className="rounded-full bg-blue-600 px-8 py-5 font-semibold text-white">
                   Let's work together
                 </button>
@@ -243,7 +267,7 @@ function App() {
           <div className="border-b border-gray-200 py-4 px-6">
             <button className="flex w-full items-center justify-between rounded-xl border border-gray-200 bg-gray-50 px-3 py-1.5">
               <div className="flex items-center gap-x-2">
-                <span className="rounded-lg bg-white p-1 shadow-md">
+                <span className="rounded-lg bg-white p-1 shadow">
                   <DeviceDesktopIcon className="h-5 w-5 stroke-current text-blue-600" />
                 </span>
                 <span className="rounded-lg bg-blue-100 py-1 px-3 text-sm font-semibold text-blue-600 ">
