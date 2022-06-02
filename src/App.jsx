@@ -15,6 +15,13 @@ import FileIcon from "./icons/file.svg?component";
 import ImageIcon from "./icons/image.svg?component";
 import AlertCircleIcon from "./icons/alert-circle.svg?component";
 import SettingsIcon from "./icons/settings.svg?component";
+import AlignBottomIcon from "./icons/align-bottom.svg?component";
+import AlignCenterIcon from "./icons/align-center.svg?component";
+import AlignLeftIcon from "./icons/align-left.svg?component";
+import AlignRightIcon from "./icons/align-right.svg?component";
+import AlignTopIcon from "./icons/align-top.svg?component";
+import AlignMiddleIcon from "./icons/align-middle.svg?component";
+import Tooltip from "./components/Tooltip";
 
 function App() {
   return (
@@ -29,43 +36,59 @@ function App() {
             className="group relative rounded-xl bg-gray-100 p-2 text-blue-600 hover:bg-gray-50"
           >
             <SquarePlusIcon className="h-6 w-6 stroke-current" />
-            <div className="absolute inset-y-0 left-12 hidden items-center group-hover:flex">
-              <div className="whitespace-nowrap rounded-lg bg-white py-1 px-4 text-sm text-gray-900 shadow-md">
-                Add elements <span className="text-gray-400">(A)</span>
-              </div>
-            </div>
+            <Tooltip>
+              Add elements <span className="text-gray-400">(A)</span>
+            </Tooltip>
           </a>
           <a
             href="#"
-            className="rounded-xl p-2 text-gray-400 hover:bg-gray-100"
+            className="group relative rounded-xl p-2 text-gray-400 hover:bg-gray-100"
           >
             <LayoutIcon className="h-6 w-6 stroke-current" />
+            <Tooltip>
+              Layouts <span className="text-gray-400">(Y)</span>
+            </Tooltip>
           </a>
           <a
             href="#"
-            className="rounded-xl p-2 text-gray-400 hover:bg-gray-100"
+            className="group relative rounded-xl p-2 text-gray-400 hover:bg-gray-100"
           >
             <Palette className="h-6 w-6 stroke-current" />
+            <Tooltip>
+              Themes <span className="text-gray-400">(T)</span>
+            </Tooltip>
           </a>
           <a
             href="#"
-            className="rounded-xl p-2 text-gray-400 hover:bg-gray-100"
+            className="group relative rounded-xl p-2 text-gray-400 hover:bg-gray-100"
           >
             <FileIcon className="h-6 w-6 stroke-current" />
+            <Tooltip>
+              Assets <span className="text-gray-400">(S)</span>
+            </Tooltip>
           </a>
           <a
             href="#"
-            className="rounded-xl p-2 text-gray-400 hover:bg-gray-100"
+            className="group relative rounded-xl p-2 text-gray-400 hover:bg-gray-100"
           >
             <ImageIcon className="h-6 w-6 fill-current" />
+            <Tooltip>
+              Images <span className="text-gray-400">(I)</span>
+            </Tooltip>
           </a>
         </nav>
         <div className="flex flex-col items-center gap-y-4 py-10">
-          <button className="rounded-xl p-2 text-gray-400 hover:bg-gray-100">
+          <button className="group relative rounded-xl p-2 text-gray-400 hover:bg-gray-100">
             <AlertCircleIcon className="h-6 w-6 stroke-current" />
+            <Tooltip>
+              Help <span className="text-gray-400">(H)</span>
+            </Tooltip>
           </button>
-          <button className="rounded-xl p-2 text-gray-400 hover:bg-gray-100">
+          <button className="group relative rounded-xl p-2 text-gray-400 hover:bg-gray-100">
             <SettingsIcon className="h-6 w-6 stroke-current" />
+            <Tooltip>
+              Settings <span className="text-gray-400">(T)</span>
+            </Tooltip>
           </button>
           <button className="mt-2 rounded-full bg-gray-100">
             <img
@@ -182,6 +205,28 @@ function App() {
                 </div>
               </div>
             </summary>
+            <div className="border-b border-gray-200 py-4 px-6">
+              <div className="flex items-center justify-between">
+                <button className="rounded-lg border border-gray-200 p-2 hover:bg-gray-100">
+                  <AlignBottomIcon className="h-5 w-5 stroke-current text-gray-400" />
+                </button>
+                <button className="rounded-lg border border-gray-200 p-2 hover:bg-gray-100">
+                  <AlignCenterIcon className="h-5 w-5 stroke-current text-gray-400" />
+                </button>
+                <button className="rounded-lg border border-gray-200 p-2 hover:bg-gray-100">
+                  <AlignLeftIcon className="h-5 w-5 stroke-current text-gray-400" />
+                </button>
+                <button className="rounded-lg border border-gray-200 p-2 hover:bg-gray-100">
+                  <AlignRightIcon className="h-5 w-5 stroke-current text-gray-400" />
+                </button>
+                <button className="rounded-lg border border-gray-200 p-2 hover:bg-gray-100">
+                  <AlignTopIcon className="h-5 w-5 stroke-current text-gray-400" />
+                </button>
+                <button className="rounded-lg border border-gray-200 p-2 hover:bg-gray-100">
+                  <AlignMiddleIcon className="h-5 w-5 stroke-current text-gray-400" />
+                </button>
+              </div>
+            </div>
           </details>
           <details className="group">
             <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
