@@ -102,7 +102,7 @@ function App() {
         </div>
       </aside>
       <div className="flex h-screen flex-1 flex-col">
-        <header className="flex h-18 items-center justify-center gap-x-4 border-b border-gray-200 bg-white px-8">
+        <header className="flex h-18 items-center justify-center gap-x-6 border-b border-gray-200 bg-white px-8">
           <button className="flex items-center justify-center rounded-xl bg-gray-100 p-2">
             <ChevronLeftIcon className="h-6 w-6 stroke-current text-gray-400" />
           </button>
@@ -123,7 +123,7 @@ function App() {
           {/* Separator */}
           <div className="h-full w-px bg-gray-200" />
 
-          <div className="flex items-center gap-x-2">
+          <div className="flex items-center gap-x-3">
             <button className="rounded-xl bg-gray-100 p-2 text-blue-600">
               <DeviceDesktopIcon className="h-6 w-6 stroke-current" />
             </button>
