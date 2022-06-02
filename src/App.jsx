@@ -26,9 +26,14 @@ function App() {
         <nav className="flex flex-1 flex-col gap-y-4 pt-10">
           <a
             href="#"
-            className="rounded-xl bg-gray-100 p-2 text-blue-600 hover:bg-gray-50"
+            className="group relative rounded-xl bg-gray-100 p-2 text-blue-600 hover:bg-gray-50"
           >
             <SquarePlusIcon className="h-6 w-6 stroke-current" />
+            <div className="absolute inset-y-0 left-12 hidden items-center group-hover:flex">
+              <div className="whitespace-nowrap rounded-lg bg-white py-1 px-4 text-sm text-gray-900 shadow-md">
+                Add elements <span className="text-gray-400">(A)</span>
+              </div>
+            </div>
           </a>
           <a
             href="#"
@@ -124,8 +129,7 @@ function App() {
         </header>
         <main className="overflow-y-auto px-12">
           <iframe
-            onLoad="this.height=this.contentWindow.document.body.scrollHeight;"
-            className="my-12 h-full w-full"
+            className="my-12 min-h-screen w-full"
             src="https://www.dipainhouse.com/"
             frameBorder="0"
           ></iframe>
