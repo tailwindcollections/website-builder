@@ -326,6 +326,9 @@ function App() {
                 <span className="absolute top-2 left-2 text-[10px] uppercase text-gray-400">
                   margin
                 </span>
+                <span className="absolute bottom-12 right-14 text-[10px] uppercase text-gray-400">
+                  padding
+                </span>
                 <div className="relative w-full">
                   <div className="absolute inset-x-0 top-0 flex -translate-y-1/2 flex-col items-center gap-2">
                     <input
