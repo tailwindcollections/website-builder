@@ -253,16 +253,14 @@ function App() {
           </button>
         </div>
         <div className="flex flex-1 flex-col overflow-y-auto">
-          <div className="border-b border-gray-200 py-4 px-6">
-            <div className="flex items-center justify-between">
-              <span className="text-sm font-semibold"> Selector </span>
-              <span className="text-sm text-gray-400">
-                Inheriting{" "}
-                <span className="text-sm font-medium text-gray-900">
-                  2 Selectors
-                </span>
+          <div className="flex items-center justify-between border-b border-gray-200 py-4 px-6">
+            <span className="text-sm font-semibold"> Selector </span>
+            <span className="text-sm text-gray-400">
+              Inheriting{" "}
+              <span className="text-sm font-medium text-gray-900">
+                2 Selectors
               </span>
-            </div>
+            </span>
           </div>
           <div className="border-b border-gray-200 py-4 px-6">
             <button className="flex w-full items-center justify-between rounded-xl border border-gray-200 bg-gray-50 px-3 py-1.5">
@@ -281,13 +279,9 @@ function App() {
             </div>
           </div>
           <details className="group">
-            <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold">Layout</span>
-                <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
-                  <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-                </div>
-              </div>
+            <summary className="flex cursor-pointer list-none items-center justify-between border-b border-gray-200 py-4 px-6">
+              <span className="text-sm font-semibold">Layout</span>
+              <ChevronDownIcon className="h-5 w-5 rotate-90 stroke-current text-gray-400 transition-transform group-open:rotate-0" />
             </summary>
             <div className="border-b border-gray-200 py-4 px-6">
               <div className="flex items-center justify-between">
@@ -313,13 +307,9 @@ function App() {
             </div>
           </details>
           <details className="group">
-            <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold">Spacing</span>
-                <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
-                  <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-                </div>
-              </div>
+            <summary className="flex cursor-pointer list-none items-center justify-between border-b border-gray-200 py-4 px-6">
+              <span className="text-sm font-semibold">Spacing</span>
+              <ChevronDownIcon className="h-5 w-5 rotate-90 stroke-current text-gray-400 transition-transform group-open:rotate-0" />
             </summary>
             <div className="border-b border-gray-200 py-4 px-6">
               <div className="relative flex items-center rounded-xl border-2 border-dashed border-gray-200 py-10 px-12">
@@ -382,13 +372,9 @@ function App() {
             </div>
           </details>
           <details className="group">
-            <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold">Size</span>
-                <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
-                  <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-                </div>
-              </div>
+            <summary className="flex cursor-pointer list-none items-center justify-between border-b border-gray-200 py-4 px-6">
+              <span className="text-sm font-semibold">Size</span>
+              <ChevronDownIcon className="h-5 w-5 rotate-90 stroke-current text-gray-400 transition-transform group-open:rotate-0" />
             </summary>
             <div className="border-b border-gray-200 py-4 px-6">
               <div className="grid grid-cols-2 gap-4">
@@ -482,43 +468,27 @@ function App() {
             </div>
           </details>
           <details className="group">
-            <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold">Typography</span>
-                <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
-                  <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-                </div>
-              </div>
+            <summary className="flex cursor-pointer list-none items-center justify-between border-b border-gray-200 py-4 px-6">
+              <span className="text-sm font-semibold">Typography</span>
+              <ChevronDownIcon className="h-5 w-5 rotate-90 stroke-current text-gray-400 transition-transform group-open:rotate-0" />
             </summary>
           </details>
           <details className="group">
-            <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold">Position</span>
-                <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
-                  <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-                </div>
-              </div>
+            <summary className="flex cursor-pointer list-none items-center justify-between border-b border-gray-200 py-4 px-6">
+              <span className="text-sm font-semibold">Position</span>
+              <ChevronDownIcon className="h-5 w-5 rotate-90 stroke-current text-gray-400 transition-transform group-open:rotate-0" />
             </summary>
           </details>
           <details className="group">
-            <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold">Border</span>
-                <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
-                  <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-                </div>
-              </div>
+            <summary className="flex cursor-pointer list-none items-center justify-between border-b border-gray-200 py-4 px-6">
+              <span className="text-sm font-semibold">Border</span>
+              <ChevronDownIcon className="h-5 w-5 rotate-90 stroke-current text-gray-400 transition-transform group-open:rotate-0" />
             </summary>
           </details>
           <details className="group">
-            <summary className="cursor-pointer list-none border-b border-gray-200 py-4 px-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold">Background</span>
-                <div className="rotate-90 rounded-lg p-1 transition-transform group-open:rotate-0">
-                  <ChevronDownIcon className="h-5 w-5 stroke-current text-gray-400" />
-                </div>
-              </div>
+            <summary className="flex cursor-pointer list-none items-center justify-between border-b border-gray-200 py-4 px-6">
+              <span className="text-sm font-semibold">Background</span>
+              <ChevronDownIcon className="h-5 w-5 rotate-90 stroke-current text-gray-400 transition-transform group-open:rotate-0" />
             </summary>
           </details>
         </div>
