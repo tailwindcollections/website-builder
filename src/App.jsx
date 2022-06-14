@@ -253,7 +253,7 @@ function App() {
             Publish
           </button>
         </div>
-        <div className="flex flex-1 flex-col overflow-y-auto">
+        <div className="flex flex-1 flex-col overflow-y-scroll">
           <div className="flex items-center justify-between border-b border-gray-200 py-4 px-6">
             <span className="text-sm font-semibold"> Selector </span>
             <span className="text-sm text-gray-400">
